@@ -25,7 +25,7 @@ I am a solo dev *(we may get support soon 🤞)* — but take a look now as this
 - [@TurboReel](https://github.com/TurboReel/mediachain)  
   - [TurboReel GUI](https://github.com/TurboReel/turboreel-GUI-v1)
 
-## 🔧 Pull Requests
+
 ## 🔧 How to Contribute (Pull Request Guide)
 
 1. **Fork the Repository**  
