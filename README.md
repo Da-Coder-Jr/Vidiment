@@ -4,13 +4,13 @@
 ---
 
 ## 📍 Roadmap
--  API (Website requests)  
-- ⏳ Website  
+- ⏳API (Website requests)  
+- ⏳Website  
 - ⏳API (Website requests)  
 - ✅ Free  
-- ⏳ Story mode (AI story)  
+- ⏳Story mode (AI story)  
   - ⏳Reddit story (AI reddit story)  
-  - ⏳ Custom background / YouTube videos for background (For any type of reel)  
+  - ⏳Custom background / YouTube videos for background (For any type of reel)  
 
 ---
 
