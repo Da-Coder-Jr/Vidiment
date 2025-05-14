@@ -26,7 +26,7 @@ I am a solo dev *(we may get support soon 🤞)* — but take a look now as this
   - [TurboReel GUI](https://github.com/TurboReel/turboreel-GUI-v1)
 
 
-## 🔧 How to Contribute (Pull Request Guide)
+## 🔧 How to Contribute (Pull Request Guide) - https://github.com/Da-Coder-Jr/Vidiment/issues/2
 
 1. **Fork the Repository**  
    If you’re contributing to a project you didn’t create, fork the repository to your own GitHub account.
