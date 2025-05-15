@@ -1,4 +1,4 @@
-# 🌟 Vidiment 
+# 🌟 Vidiment  (BETA)
 **Vidiment. AI reel maker**
 **BETA - Expansion of [TurboReel GUI](https://github.com/TurboReel/turboreel-GUI-v1) (Free)**
 
