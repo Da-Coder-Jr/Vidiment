@@ -11,7 +11,8 @@
 - ✅ Free  
 - ⏳Story mode (AI story)  
   - ⏳Reddit story (AI reddit story)  
-  - ⏳Custom background / YouTube videos for background (For any type of reel)  
+  - ⏳Custom background / YouTube videos for background (For any type of reel)
+   [You may see a complete project! This is **NOT** complete as we are working to make it free + Add a amazing website!]
 
 ---
 
