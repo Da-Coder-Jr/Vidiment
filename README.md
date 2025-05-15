@@ -1,5 +1,6 @@
-# 🌟 Vidiment  
+# 🌟 Vidiment 
 **Vidiment. AI reel maker**
+**BETA - Expansion of [TurboReel GUI](https://github.com/TurboReel/turboreel-GUI-v1) (Free)**
 
 ---
 
@@ -23,7 +24,7 @@ I am a solo dev *(we may get support soon 🤞)* — but take a look now as this
 ## 🙏 Thank you for the inspiration!
 - [@PollinationsAI](https://github.com/pollinations/pollinations)  
 - [@TurboReel](https://github.com/TurboReel/mediachain)  
-  - [TurboReel GUI](https://github.com/TurboReel/turboreel-GUI-v1)
+  - [TurboReel GUI](https://github.com/TurboReel/turboreel-GUI-v1) 
 
 
 ## 🔧 How to Contribute (Pull Request Guide) - https://github.com/Da-Coder-Jr/Vidiment/issues/2
