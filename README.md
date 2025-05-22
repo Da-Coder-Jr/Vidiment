@@ -28,7 +28,7 @@ I am a solo dev *(we may get support soon 🤞)* — but take a look now as this
 - [@PollinationsAI](https://github.com/pollinations/pollinations)  
 - [@TurboReel](https://github.com/TurboReel/mediachain)  
   - [TurboReel GUI](https://github.com/TurboReel/turboreel-GUI-v1) 
-
+- [@AI-Youtube-Shorts](https://github.com/SamurAIGPT/AI-Youtube-Shorts-Generator/blob/main/)
 
 ## 🔧 How to Contribute (Pull Request Guide) - https://github.com/Da-Coder-Jr/Vidiment/issues/2
 
