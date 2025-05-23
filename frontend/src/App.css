@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5; /* Light gray background */
+  color: #333; /* Dark gray text */
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App-header {
+  background-color: #007bff; /* Blue header */
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  width: 100%;
+  max-width: 800px; /* Max width for the header */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+main {
+  width: 100%;
+  max-width: 800px; /* Max width for the main content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; /* Add space between generator sections */
+}
+
+.generator-section {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-bottom: 20px; /* Keep some space if sections are stacked */
+}
+
+.generator-section h2 {
+  color: #0056b3; /* Darker blue for section titles */
+  margin-top: 0;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.input-section {
+  /* background-color: #fff; Removed as parent .generator-section has it now */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between textarea and button */
+}
+
+.input-section textarea {
+  width: 100%; /* Take full width of parent */
+  padding: 0; /* Removed padding as parent .generator-section has it */
+  border-radius: 4px; /* This might not be needed if parent has border-radius */
+  border: 1px solid #ccc;
+  font-size: 1em;
+  min-height: 80px; /* Taller textarea */
+  resize: vertical;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.input-section input[type="text"],
+.youtube-url-input { /* Specific styling for text inputs and YouTube URL input */
+  width: calc(100% - 22px); /* Adjusted to match example in App.js for subreddit input, assuming 10px padding + 1px border each side */
+  padding: 10px; /* Standardized padding */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Add some space below these inputs if they are stacked */
+}
+
+/* If the above general rule for input[type="text"] is too broad, 
+   you can make .youtube-url-input more specific or add overrides.
+   For now, let's assume it's okay for .youtube-url-input to share these base styles.
+*/
+
+.input-section textarea + .youtube-url-input,
+.input-section input[type="text"] + .youtube-url-input { /* Add margin if YT URL directly follows another input */
+  margin-top: 10px;
+}
+
+/* Ensure the subreddit input also has consistent styling if not using .youtube-url-input class */
+.input-section input[placeholder^="Enter subreddit name"] {
+  /* This was styled inline in App.js, good to have a class or more specific selector here */
+  /* width: calc(100% - 22px); already covered by general input[type="text"] */
+  /* padding: 10px; already covered */
+  /* margin-bottom:10px; already covered */
+}
+
+
+.file-input-container {
+  /* border-radius: 4px; Removed, was likely a copy-paste error */
+  /* border: 1px solid #ccc; Removed, was likely a copy-paste error */
+  /* font-size: 1em; Removed, was likely a copy-paste error */
+  box-sizing: border-box;
+}
+
+
+.file-input-container {
+  margin-top: 15px; /* Space above file input */
+  margin-bottom: 15px; /* Space below file input */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.file-input-container label {
+  font-weight: bold;
+  color: #555;
+  font-size: 0.95em;
+}
+
+.input-section input[type="file"] {
+  font-size: 0.9em;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between checkbox and label */
+  margin-top: 10px; /* Space above the checkbox container */
+  margin-bottom: 10px; /* Space below the checkbox container */
+  justify-content: flex-start; /* Align to the left */
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin: 0; /* Remove default browser margin */
+  width: 16px; /* Custom size */
+  height: 16px; /* Custom size */
+  cursor: pointer;
+}
+
+.checkbox-container label {
+  font-size: 0.95em;
+  color: #333;
+  cursor: pointer;
+}
+
+
+.input-section button {
+  padding: 15px 30px;
+  font-size: 1.1em;
+  width: 100%; /* Make buttons take full width of their container */
+  box-sizing: border-box;
+  color: white;
+  background-color: #28a745; /* Green button */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-section button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.input-section button:hover:not(:disabled) {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.error-message {
+  color: #dc3545; /* Red for errors */
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.loading-message {
+  font-size: 1.2em;
+  color: #007bff; /* Blue for loading message */
+  margin-bottom: 20px;
+}
+
+.video-section {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-section h2 {
+  color: #007bff; /* Blue for section titles */
+  margin-bottom: 15px;
+}
+
+.video-section video {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%; /* Ensure video is responsive */
+  background-color: #000; /* Black background for video player */
+}
+
+.story-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff; /* White background for story */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: left;
+}
+
+.story-section h3 {
+  color: #007bff; /* Blue for sub-titles */
+  margin-top: 0;
+}
+
+.story-section p {
+  line-height: 1.6;
+  white-space: pre-wrap; /* Preserve line breaks from the story */
+}

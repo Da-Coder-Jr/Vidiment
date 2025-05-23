@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+requests
+moviepy
+praw
+yt-dlp
