@@ -1,4 +1,4 @@
-# 🌟 Vidiment  (BETA)
+# 🌟 Vidiment  (BETA) 
 **Vidiment. AI reel maker**
 **BETA - Expansion of [TurboReel GUI](https://github.com/TurboReel/turboreel-GUI-v1) (Free)**
 
@@ -14,7 +14,7 @@
   - ⏳Custom background / YouTube videos for background (For any type of reel)
 
 
-[You may see a complete project! This is **NOT** complete as we are working to make it free + Add a amazing website!]
+[You may see a complete project! This is **NOT** complete as we are working to make it free + Add a amazing website! This is a exect replication of TurboReel GUI as of now (We are making big changes!)]
 
 ---
 
