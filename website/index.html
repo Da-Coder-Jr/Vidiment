@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vidiment Demo</title>
+  <style>
+    body{font-family:Arial,sans-serif;margin:0;padding:20px;background:#111;color:#fff;text-align:center}
+    #controls{margin-bottom:20px}
+    input[type="text"]{padding:8px;width:60%;max-width:400px}
+    select,button{padding:8px;margin-left:4px}
+    #player{position:relative;width:360px;height:640px;margin:0 auto;background:#000;overflow:hidden;display:none}
+    #player video,#player img.bg{position:absolute;width:100%;height:100%;object-fit:cover}
+    #hook{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;display:none;z-index:2}
+    #caption{position:absolute;bottom:5%;left:0;width:100%;padding:0 10px;font-size:1.4em;text-shadow:2px 2px 4px #000;z-index:3}
+    .fade{animation:fade 12s linear infinite}
+    .delay2{animation-delay:6s}
+    @keyframes fade{0%,45%{opacity:1}50%,100%{opacity:0}}
+  </style>
+</head>
+<body>
+  <h1>Vidiment</h1>
+  <div id="controls">
+    <select id="mode">
+      <option value="story">Story Mode</option>
+      <option value="reddit">Reddit Mode</option>
+    </select>
+    <select id="theme" style="display:none">
+      <option value="white">Hook White</option>
+      <option value="black">Hook Black</option>
+    </select>
+    <input type="text" id="prompt" placeholder="Enter your prompt">
+    <button id="go">Generate</button>
+  </div>
+  <div id="player">
+    <img class="bg fade" src="https://images.unsplash.com/photo-1508766206392-8bd5cf550d1b?auto=format&fit=crop&w=720&q=60" alt="bg1">
+    <img class="bg fade delay2" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=720&q=60" alt="bg2">
+    <video id="vid" muted loop></video>
+    <img id="hook" alt="hook">
+    <div id="caption"></div>
+  </div>
+  <script>
+    const modeEl=document.getElementById('mode');
+    const themeEl=document.getElementById('theme');
+    modeEl.addEventListener('change',()=>{
+      themeEl.style.display=modeEl.value==='reddit'?'':'none';
+    });
+    document.getElementById('go').addEventListener('click',()=>{
+      const prompt=document.getElementById('prompt').value.trim();
+      if(!prompt) return alert('Enter a prompt');
+      const mode=modeEl.value; const caption=document.getElementById('caption');
+      const hook=document.getElementById('hook'); const vid=document.getElementById('vid');
+      document.getElementById('player').style.display='block';
+      speechSynthesis.cancel();
+      if(mode==='story'){
+        const script=`Here is a quick story about ${prompt}. Hope you enjoy it.`;
+        caption.textContent=script;
+        vid.style.display='none';
+        hook.style.display='none';
+        const utter=new SpeechSynthesisUtterance(script);
+        speechSynthesis.speak(utter);
+      }else{
+        const script=`What's your opinion about ${prompt}?`;
+        caption.textContent=script;
+        vid.src='https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4';
+        vid.style.display='block';
+        vid.play();
+        hook.src=themeEl.value==='white'? 'https://github.com/Da-Coder-Jr/Vidiment/blob/main/assets/reddit-white.png?raw=true':'https://github.com/Da-Coder-Jr/Vidiment/blob/main/assets/reddit-black.png?raw=true';
+        hook.style.display='block';
+        const utter=new SpeechSynthesisUtterance(script);
+        speechSynthesis.speak(utter);
+      }
+    });
+  </script>
+</body>
+</html>
