@@ -5,9 +5,7 @@
 ---
 
 ## 📍 Roadmap
-- ⏳API (Website requests)  
-- ⏳Website  - Clone of fleek.xyz (Not exact clone but ❤️ UI!)
-- ⏳API (Website requests)  
+- ✅Website  - simple frontend
 - ✅ Free  
 - ⏳Story mode (AI story)  
   - ⏳Reddit story (AI reddit story)  
@@ -29,6 +27,9 @@ I am a solo dev *(we may get support soon 🤞)* — but take a look now as this
 - [@TurboReel](https://github.com/TurboReel/mediachain)  
   - [TurboReel GUI](https://github.com/TurboReel/turboreel-GUI-v1) 
 - [@AI-Youtube-Shorts](https://github.com/SamurAIGPT/AI-Youtube-Shorts-Generator/blob/main/)
+
+## 🌐 Website
+Open `website/index.html` in any browser to try the demo.
 
 ## 🔧 How to Contribute (Pull Request Guide) - https://github.com/Da-Coder-Jr/Vidiment/issues/2
 
